@@ -9,17 +9,28 @@
 
 <body>
 
-    <div class="container">
+<div class="page">
 
-        <div class="flower">🌸</div>
+    <div class="card">
 
-        <p class="subtitle">🌸 A Bond Of Love 🌸</p>
+        <div class="top-photo">
+            <img src="brother2.png.jpeg" alt="Sai and Gowtham Annaya">
+        </div>
 
-        <h1>Happy Raksha<br>Bandhan ❤️</h1>
+        <div class="flowers">🌸</div>
+
+        <div class="small-title">
+            🌸 A Bond Of Love 🌸
+        </div>
+
+        <h1>
+            Happy Raksha<br>
+            Bandhan ❤️
+        </h1>
 
         <p class="intro">
             A little surprise made with lots of love<br>
-            for my special brother.
+            for my special brothers.
         </p>
 
         <button onclick="openSurprise()">
@@ -28,43 +39,45 @@
 
         <div id="surprise" class="surprise">
 
-            <h2>💖 Happy Raksha Bandhan, Brother! 💖</h2>
-
-            <img src="brother2.png.jpeg"
-                 alt="My Brother"
-                 class="brother-photo">
+            <h2>💖 Dear Sai Annaya & Gowtham Annaya 💖</h2>
 
             <p>
-                No matter how much we fight,<br>
-                you will always be one of the most special
-                people in my life. ❤️
+                You both are very special to me. ❤️
             </p>
 
-            <p class="message">
-                Thank you for always being there.<br>
-                Wishing you lots of happiness and success! 🌸
+            <p>
+                No matter how much we tease, fight or argue,
+                the bond between us will always be special.
             </p>
 
-            <h3>With lots of love ❤️</h3>
+            <p class="wish">
+                Happy Raksha Bandhan<br>
+                <strong>Sai Annaya ❤️</strong><br>
+                <strong>Gowtham Annaya ❤️</strong>
+            </p>
+
+            <div class="heart">❤️</div>
 
         </div>
 
     </div>
 
-    <script>
-        function openSurprise() {
-            const surprise = document.getElementById("surprise");
+</div>
 
-            surprise.style.display = "block";
+<script>
+function openSurprise() {
+    const surprise = document.getElementById("surprise");
 
-            setTimeout(() => {
-                surprise.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
-            }, 100);
-        }
-    </script>
+    surprise.style.display = "block";
+
+    setTimeout(() => {
+        surprise.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }, 100);
+}
+</script>
 
 </body>
 </html>
