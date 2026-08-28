@@ -1,208 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Raksha Bandhan ❤️</title>
 
-<title>Raksha Bandhan ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
-* {
-    box-sizing: border-box;
-}
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, "Times New Roman", serif;
+            background: linear-gradient(135deg, #ff9933, #ffd166, #ff7b54);
+        }
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Georgia, serif;
-    background: linear-gradient(135deg, #ffd98a, #f6a45b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+        .container {
+            width: 100%;
+            max-width: 580px;
+            max-height: 94vh;
+            overflow-y: auto;
+            padding: 40px 25px;
+            text-align: center;
+            background: rgba(255,255,255,0.96);
+            border: 4px solid #f4a261;
+            border-radius: 32px;
+            box-shadow: 0 20px 50px rgba(100,50,10,0.3);
+        }
 
-.card {
-    width: 100%;
-    max-width: 430px;
-    background: #fffaf0;
-    border-radius: 28px;
-    padding: 25px 20px;
-    text-align: center;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.18);
-}
+        .rakhi {
+            font-size: 85px;
+            margin-bottom: 10px;
+            animation: float 2s infinite ease-in-out;
+        }
 
-.decor {
-    font-size: 22px;
-    margin-bottom: 8px;
-}
+        .small-title {
+            color: #d97706;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
 
-.title-small {
-    color: #b56832;
-    font-size: 17px;
-    font-weight: bold;
-}
+        h1 {
+            color: #c2410c;
+            font-size: 34px;
+            line-height: 1.25;
+            margin: 10px 0 18px;
+        }
 
-h1 {
-    color: #a74728;
-    font-size: 34px;
-    line-height: 1.15;
-    margin: 15px 0;
-}
+        h2 {
+            color: #d97706;
+            font-size: 26px;
+            margin-bottom: 18px;
+        }
 
-.intro {
-    color: #705744;
-    font-size: 15px;
-    line-height: 1.6;
-}
+        p {
+            color: #654321;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
 
-/* PHOTO */
-.photo-box {
-    width: 190px;
-    height: 190px;
-    margin: 20px auto;
-    border-radius: 22px;
-    overflow: hidden;
-    border: 5px solid white;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
-}
+        button {
+            padding: 15px 32px;
+            border: none;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #e85d04, #f48c06);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(200,80,20,0.3);
+        }
 
-.photo-box img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
+        button:active {
+            transform: scale(0.96);
+        }
 
-.names {
-    color: #a74728;
-    font-size: 21px;
-    line-height: 1.7;
-    margin: 10px 0 15px;
-}
+        .gift {
+            font-size: 105px;
+            margin: 20px 0;
+            cursor: pointer;
+            animation: bounce 1.2s infinite;
+        }
 
-button {
-    background: #e87935;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 13px 28px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
+        .photo-frame {
+            width: 100%;
+            max-width: 330px;
+            height: 330px;
+            margin: 20px auto;
+            padding: 7px;
+            background: white;
+            border: 4px solid #f4a261;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(100,50,10,0.25);
+        }
 
-button:active {
-    transform: scale(0.97);
-}
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 16px;
+        }
 
-#surprise {
-    display: none;
-    margin-top: 22px;
-    padding: 20px;
-    border-radius: 20px;
-    background: #fff0d5;
-    color: #624c39;
-    line-height: 1.7;
-}
+        .final-message {
+            color: #654321;
+            font-size: 17px;
+            line-height: 1.75;
+        }
 
-#surprise h2 {
-    color: #a74728;
-    font-size: 20px;
-}
+        .from-sister {
+            margin-top: 10px;
+            color: #c2410c;
+            font-size: 19px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.7;
+        }
 
-.wish {
-    color: #a74728;
-    font-size: 18px;
-    font-weight: bold;
-}
+        .hearts {
+            font-size: 25px;
+            margin-top: 12px;
+        }
 
-.heart {
-    font-size: 30px;
-}
+        .screen {
+            display: none;
+        }
 
-@media (max-width: 450px) {
-    .card {
-        padding: 22px 16px;
-    }
+        .screen.active {
+            display: block;
+        }
 
-    .photo-box {
-        width: 165px;
-        height: 165px;
-    }
+        @keyframes float {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
-    h1 {
-        font-size: 30px;
-    }
-}
-</style>
+        @keyframes bounce {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 18px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .photo-frame {
+                max-width: 280px;
+                height: 280px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-    <div class="decor">🌸 💕 🌸</div>
+    <!-- PAGE 1 -->
+    <section id="page1" class="screen active">
 
-    <div class="title-small">
-        A Bond Of Love
-    </div>
+        <div class="rakhi">🪢</div>
 
-    <h1>
-        Happy Raksha<br>
-        Bandhan ❤️
-    </h1>
+        <div class="small-title">
+            🌸 A Bond Of Love 🌸
+        </div>
 
-    <p class="intro">
-        A little surprise made with lots of love<br>
-        for my special brothers.
-    </p>
+        <h1>
+            Happy Raksha Bandhan ❤️
+        </h1>
 
-    <!-- PHOTO -->
-    <div class="photo-box">
-        <img src="brother2.png.jpeg" alt="Sai Annaya and Gowtham Annaya">
-    </div>
+        <p>
+            A little surprise made with<br>
+            lots of love for my special brothers.
+        </p>
 
-    <!-- NAMES -->
-    <div class="names">
-        ❤️ Sai Annaya ❤️<br>
-        ❤️ Gowtham Annaya ❤️
-    </div>
+        <button onclick="showPage(2)">
+            Open Surprise 🎁
+        </button>
 
-    <button onclick="openSurprise()">
-        Open Surprise 🎁
-    </button>
+    </section>
 
-    <div id="surprise">
+
+    <!-- PAGE 2 -->
+    <section id="page2" class="screen">
+
+        <div class="rakhi">🪢</div>
+
+        <div class="small-title">
+            💖 Especially For You 💖
+        </div>
+
+        <h1>
+            Sai Annaya ❤️<br>
+            Gowtham Annaya ❤️
+        </h1>
+
+        <p>
+            This special Raksha Bandhan<br>
+            surprise is just for you.
+        </p>
+
+        <button onclick="showPage(3)">
+            Continue ✨
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section id="page3" class="screen">
+
+        <div class="rakhi">🪢</div>
+
+        <div class="small-title">
+            🎀 A Little Gift For You 🎀
+        </div>
+
+        <h1>
+            Something Special<br>
+            Is Waiting! 🎁
+        </h1>
+
+        <p>
+            Tap the gift box and<br>
+            open your surprise.
+        </p>
+
+        <div class="gift" onclick="showPage(4)">
+            🎁
+        </div>
+
+        <p>
+            <small>Tap the gift 🎁</small>
+        </p>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section id="page4" class="screen">
+
+        <div class="small-title">
+            🪷 With Lots Of Love 🪷
+        </div>
+
+        <h1>
+            Happy Raksha Bandhan! ❤️
+        </h1>
 
         <h2>
-            💖 Dear Sai Annaya & Gowtham Annaya 💖
+            Sai Annaya & Gowtham Annaya 💖
         </h2>
 
-        <p>
-            You both are very special to me. ❤️
+        <div class="photo-frame">
+            <img
+                src="brother2.png.jpeg"
+                alt="Sai Annaya and Gowtham Annaya">
+        </div>
+
+        <p class="final-message">
+            You are both very special to me. ❤️
+            <br><br>
+            On this Raksha Bandhan,
+            I wish you both lots of happiness,
+            good health, success and
+            beautiful moments always. ✨
+            <br><br>
+            Thank you for always being
+            there for me. 💖
+            <br><br>
+            🪢 Happy Raksha Bandhan,
+            Sai Annaya & Gowtham Annaya! 🪢
         </p>
 
-        <p>
-            No matter how much we tease or fight,
-            our bond will always remain special.
-        </p>
+        <div class="from-sister">
+            With lots of love ❤️
+            <br>
+            From Your Sister 🌸
+        </div>
 
-        <p class="wish">
-            Happy Raksha Bandhan! 🌸<br>
-            Love you both ❤️
-        </p>
+        <div class="hearts">
+            ❤️ 🌸 ❤️
+        </div>
 
-        <div class="heart">❤️</div>
+        <br>
 
-    </div>
+        <button onclick="showPage(1)">
+            See Again 🔄
+        </button>
+
+    </section>
 
 </div>
 
+
 <script>
-function openSurprise() {
-    document.getElementById("surprise").style.display = "block";
-}
+    function showPage(number) {
+
+        document.querySelectorAll(".screen").forEach(function(screen) {
+            screen.classList.remove("active");
+        });
+
+        document.getElementById("page" + number).classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 </script>
 
 </body>
