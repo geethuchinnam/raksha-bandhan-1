@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Raksha Bandhan ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorations -->
+    <div class="decoration decoration1">🌸</div>
+    <div class="decoration decoration2">🪷</div>
+    <div class="decoration decoration3">✨</div>
+    <div class="decoration decoration4">🌸</div>
+    <div class="decoration decoration5">✨</div>
+
+
+    <div class="container">
+
+        <!-- WELCOME SCREEN -->
+
+        <section id="welcomeScreen">
+
+            <div class="rakhi">
+                <img src="rakhi.png" alt="Rakhi">
+            </div>
+
+            <div class="small-title">
+                🪷 A Bond Of Love 🪷
+            </div>
+
+            <h1>
+                Happy Raksha Bandhan ❤️
+            </h1>
+
+            <p>
+                A little surprise made with
+                lots of love for my special brother.
+            </p>
+
+            <button onclick="startGift()">
+                Open Surprise 🎁
+            </button>
+
+        </section>
+
+
+        <!-- ABHI ANNAYA SCREEN -->
+
+        <section id="nameScreen" style="display:none;">
+
+            <div class="rakhi">
+                <img src="rakhi.png" alt="Rakhi">
+            </div>
+
+            <div class="small-title">
+                💖 Especially For You 💖
+            </div>
+
+            <h1>
+                Abhi Annaya
+            </h1>
+
+            <p>
+                This special Raksha Bandhan
+                surprise is just for you. 🪢
+            </p>
+
+            <button onclick="openGift()">
+                Continue ✨
+            </button>
+
+        </section>
+
+
+        <!-- GIFT SCREEN -->
+
+        <section id="giftScreen" style="display:none;">
+
+            <div class="rakhi">
+                <img src="rakhi.png" alt="Rakhi">
+            </div>
+
+            <div class="small-title">
+                🎀 A Little Gift For You 🎀
+            </div>
+
+            <h1>
+                Something Special
+                Is Waiting! 🎁
+            </h1>
+
+            <p>
+                Tap the gift box and
+                open your surprise.
+            </p>
+
+            <div id="giftBox" onclick="showSurprise()">
+                🎁
+            </div>
+
+            <p class="tap-text">
+                Tap the gift 🎁
+            </p>
+
+        </section>
+
+
+        <!-- FINAL SURPRISE -->
+
+        <section id="finalScreen" style="display:none;">
+
+            <div class="small-title">
+                🪷 With Lots Of Love 🪷
+            </div>
+
+            <h1>
+                Happy Raksha Bandhan! ❤️
+            </h1>
+
+            <h2>
+                Abhi Annaya 💖
+            </h2>
+
+
+            <!-- PHOTO -->
+
+            <div class="photo-frame">
+
+                <img src="siblings.png"
+                     alt="Me and Abhi Annaya">
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <p class="finalMessage">
+
+                You are one of the most
+                special people in my life. ❤️
+
+                <br><br>
+
+                On this Raksha Bandhan,
+                I wish you lots of happiness,
+                good health, success and
+                beautiful moments always. ✨
+
+                <br><br>
+
+                Thank you for always being
+                there for me. 💖
+
+                <br><br>
+
+                🪢 Happy Raksha Bandhan,
+                Abhi Annaya! 🪢
+
+                <br><br>
+
+                ❤️ Keep smiling and stay
+                happy always! ❤️
+
+            </p>
+
+
+            <!-- CLOSING -->
+
+            <div class="from-sister">
+
+                With lots of love ❤️
+
+                <br>
+
+                From Your Sister 🌸
+
+            </div>
+
+
+            <br>
+
+
+            <button onclick="restartGift()">
+                See Again 🔄
+            </button>
+
+
+            <div id="hearts"></div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
