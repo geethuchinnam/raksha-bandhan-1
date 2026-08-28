@@ -1,205 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Happy Raksha Bandhan ❤️</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Decorations -->
-    <div class="decoration decoration1">🌸</div>
-    <div class="decoration decoration2">🪷</div>
-    <div class="decoration decoration3">✨</div>
-    <div class="decoration decoration4">🌸</div>
-    <div class="decoration decoration5">✨</div>
-
-
     <div class="container">
 
-        <!-- WELCOME SCREEN -->
+        <div class="flower">🌸</div>
 
-        <section id="welcomeScreen">
+        <p class="subtitle">🌸 A Bond Of Love 🌸</p>
 
-            <div class="rakhi">
-                <img src="rakhi.png" alt="Rakhi">
-            </div>
+        <h1>Happy Raksha<br>Bandhan ❤️</h1>
 
-            <div class="small-title">
-                🪷 A Bond Of Love 🪷
-            </div>
+        <p class="intro">
+            A little surprise made with lots of love<br>
+            for my special brother.
+        </p>
 
-            <h1>
-                Happy Raksha Bandhan ❤️
-            </h1>
+        <button onclick="openSurprise()">
+            Open Surprise 🎁
+        </button>
 
-            <p>
-                A little surprise made with
-                lots of love for my special brother.
-            </p>
+        <div id="surprise" class="surprise">
 
-            <button onclick="startGift()">
-                Open Surprise 🎁
-            </button>
+            <h2>💖 Happy Raksha Bandhan, Brother! 💖</h2>
 
-        </section>
-
-
-        <!-- ABHI ANNAYA SCREEN -->
-
-        <section id="nameScreen" style="display:none;">
-
-            <div class="rakhi">
-                <img src="rakhi.png" alt="Rakhi">
-            </div>
-
-            <div class="small-title">
-                💖 Especially For You 💖
-            </div>
-
-            <h1>
-                Abhi Annaya
-            </h1>
+            <img src="brother2.png.jpeg"
+                 alt="My Brother"
+                 class="brother-photo">
 
             <p>
-                This special Raksha Bandhan
-                surprise is just for you. 🪢
+                No matter how much we fight,<br>
+                you will always be one of the most special
+                people in my life. ❤️
             </p>
 
-            <button onclick="openGift()">
-                Continue ✨
-            </button>
-
-        </section>
-
-
-        <!-- GIFT SCREEN -->
-
-        <section id="giftScreen" style="display:none;">
-
-            <div class="rakhi">
-                <img src="rakhi.png" alt="Rakhi">
-            </div>
-
-            <div class="small-title">
-                🎀 A Little Gift For You 🎀
-            </div>
-
-            <h1>
-                Something Special
-                Is Waiting! 🎁
-            </h1>
-
-            <p>
-                Tap the gift box and
-                open your surprise.
+            <p class="message">
+                Thank you for always being there.<br>
+                Wishing you lots of happiness and success! 🌸
             </p>
 
-            <div id="giftBox" onclick="showSurprise()">
-                🎁
-            </div>
+            <h3>With lots of love ❤️</h3>
 
-            <p class="tap-text">
-                Tap the gift 🎁
-            </p>
-
-        </section>
-
-
-        <!-- FINAL SURPRISE -->
-
-        <section id="finalScreen" style="display:none;">
-
-            <div class="small-title">
-                🪷 With Lots Of Love 🪷
-            </div>
-
-            <h1>
-                Happy Raksha Bandhan! ❤️
-            </h1>
-
-            <h2>
-                Abhi Annaya 💖
-            </h2>
-
-
-            <!-- PHOTO -->
-
-            <div class="photo-frame">
-
-                <img src="siblings.png"
-                     alt="Me and Abhi Annaya">
-
-            </div>
-
-
-            <!-- MESSAGE -->
-
-            <p class="finalMessage">
-
-                You are one of the most
-                special people in my life. ❤️
-
-                <br><br>
-
-                On this Raksha Bandhan,
-                I wish you lots of happiness,
-                good health, success and
-                beautiful moments always. ✨
-
-                <br><br>
-
-                Thank you for always being
-                there for me. 💖
-
-                <br><br>
-
-                🪢 Happy Raksha Bandhan,
-                Abhi Annaya! 🪢
-
-                <br><br>
-
-                ❤️ Keep smiling and stay
-                happy always! ❤️
-
-            </p>
-
-
-            <!-- CLOSING -->
-
-            <div class="from-sister">
-
-                With lots of love ❤️
-
-                <br>
-
-                From Your Sister 🌸
-
-            </div>
-
-
-            <br>
-
-
-            <button onclick="restartGift()">
-                See Again 🔄
-            </button>
-
-
-            <div id="hearts"></div>
-
-        </section>
+        </div>
 
     </div>
 
+    <script>
+        function openSurprise() {
+            const surprise = document.getElementById("surprise");
 
-    <script src="script.js"></script>
+            surprise.style.display = "block";
+
+            setTimeout(() => {
+                surprise.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 100);
+        }
+    </script>
 
 </body>
-
 </html>
