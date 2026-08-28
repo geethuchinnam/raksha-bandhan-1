@@ -1,64 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Raksha Bandhan ❤️</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raksha Bandhan ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffd98a, #f6a45b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    background: #fffaf0;
+    border-radius: 28px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+}
+
+.decor {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.title-small {
+    color: #b56832;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #a74728;
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.intro {
+    color: #705744;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* PHOTO */
+.photo-box {
+    width: 190px;
+    height: 190px;
+    margin: 20px auto;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.names {
+    color: #a74728;
+    font-size: 21px;
+    line-height: 1.7;
+    margin: 10px 0 15px;
+}
+
+button {
+    background: #e87935;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#surprise {
+    display: none;
+    margin-top: 22px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff0d5;
+    color: #624c39;
+    line-height: 1.7;
+}
+
+#surprise h2 {
+    color: #a74728;
+    font-size: 20px;
+}
+
+.wish {
+    color: #a74728;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.heart {
+    font-size: 30px;
+}
+
+@media (max-width: 450px) {
+    .card {
+        padding: 22px 16px;
+    }
+
+    .photo-box {
+        width: 165px;
+        height: 165px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<div class="page">
+<div class="card">
 
-    <div class="card">
+    <div class="decor">🌸 💕 🌸</div>
 
-        <div class="top-photo">
-            <img src="brother2.png.jpeg" alt="Sai and Gowtham Annaya">
-        </div>
+    <div class="title-small">
+        A Bond Of Love
+    </div>
 
-        <div class="flowers">🌸</div>
+    <h1>
+        Happy Raksha<br>
+        Bandhan ❤️
+    </h1>
 
-        <div class="small-title">
-            🌸 A Bond Of Love 🌸
-        </div>
+    <p class="intro">
+        A little surprise made with lots of love<br>
+        for my special brothers.
+    </p>
 
-        <h1>
-            Happy Raksha<br>
-            Bandhan ❤️
-        </h1>
+    <!-- PHOTO -->
+    <div class="photo-box">
+        <img src="brother2.png.jpeg" alt="Sai Annaya and Gowtham Annaya">
+    </div>
 
-        <p class="intro">
-            A little surprise made with lots of love<br>
-            for my special brothers.
+    <!-- NAMES -->
+    <div class="names">
+        ❤️ Sai Annaya ❤️<br>
+        ❤️ Gowtham Annaya ❤️
+    </div>
+
+    <button onclick="openSurprise()">
+        Open Surprise 🎁
+    </button>
+
+    <div id="surprise">
+
+        <h2>
+            💖 Dear Sai Annaya & Gowtham Annaya 💖
+        </h2>
+
+        <p>
+            You both are very special to me. ❤️
         </p>
 
-        <button onclick="openSurprise()">
-            Open Surprise 🎁
-        </button>
+        <p>
+            No matter how much we tease or fight,
+            our bond will always remain special.
+        </p>
 
-        <div id="surprise" class="surprise">
+        <p class="wish">
+            Happy Raksha Bandhan! 🌸<br>
+            Love you both ❤️
+        </p>
 
-            <h2>💖 Dear Sai Annaya & Gowtham Annaya 💖</h2>
-
-            <p>
-                You both are very special to me. ❤️
-            </p>
-
-            <p>
-                No matter how much we tease, fight or argue,
-                the bond between us will always be special.
-            </p>
-
-            <p class="wish">
-                Happy Raksha Bandhan<br>
-                <strong>Sai Annaya ❤️</strong><br>
-                <strong>Gowtham Annaya ❤️</strong>
-            </p>
-
-            <div class="heart">❤️</div>
-
-        </div>
+        <div class="heart">❤️</div>
 
     </div>
 
@@ -66,16 +201,7 @@
 
 <script>
 function openSurprise() {
-    const surprise = document.getElementById("surprise");
-
-    surprise.style.display = "block";
-
-    setTimeout(() => {
-        surprise.scrollIntoView({
-            behavior: "smooth",
-            block: "center"
-        });
-    }, 100);
+    document.getElementById("surprise").style.display = "block";
 }
 </script>
 
